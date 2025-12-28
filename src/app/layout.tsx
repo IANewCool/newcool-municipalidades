@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Municipalidades - NewCooltura Informada",
+  title: "Municipalidades Chile | NewCooltura Informada",
   description: "Buscador de municipalidades, tramites municipales y calculadoras de patentes y permisos en Chile",
+  keywords: ["municipalidades", "tramites municipales", "patente comercial", "permisos", "alcaldia"],
+  openGraph: {
+    title: "Municipalidades Chile - NewCooltura Informada",
+    description: "Tramites municipales y patentes",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
